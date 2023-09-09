@@ -1,0 +1,12 @@
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/bin/Debug/net7.0/Intergration.deps.json
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/bin/Debug/net7.0/Intergration.dll
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/bin/Debug/net7.0/Intergration.pdb
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/Intergration.csproj.AssemblyReference.cache
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/Intergration.GeneratedMSBuildEditorConfig.editorconfig
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/Intergration.AssemblyInfoInputs.cache
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/Intergration.AssemblyInfo.cs
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/Intergration.csproj.CoreCompileInputs.cache
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/Intergration.dll
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/refint/Intergration.dll
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/Intergration.pdb
+/home/petrolhead/Documents/Jitu-Codes./C#dotnet/MyMicroservice/Intergration/obj/Debug/net7.0/ref/Intergration.dll
