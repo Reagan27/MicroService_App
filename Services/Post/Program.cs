@@ -3,6 +3,7 @@ using JituPost.Extensions;
 using JituPost.Services;
 using JituPost.Service.IService;
 using Microsoft.EntityFrameworkCore;
+using JituPost.Services.IService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,8 +23,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddHttpClient("Comments", c => c.BaseAddress = new Uri(builder.Configuration["ServiceUrl:CommentsApi"]));
+
 //Services
 builder.Services.AddScoped<IPostServices, PostService>();
+builder.Services.AddScoped<ICommentInterface, CommentsService>();
 
 //custom builders
 

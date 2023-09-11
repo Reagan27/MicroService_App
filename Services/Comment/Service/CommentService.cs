@@ -46,7 +46,11 @@ namespace JituComments.Services
                 await _context.SaveChangesAsync();
                 return "Comment deleted successfully.";
             }
-           
+
+        public async Task<IEnumerable<Comments>> GetCommentByPostAsync(Guid id)
+        {
+             return await _context.Comments.Where(comment => comment.PostId == id).ToListAsync();
         }
+    }
     }
 

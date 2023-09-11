@@ -18,7 +18,7 @@ namespace JituPost.Controllers
         private readonly ICommentService _commentService;
         private readonly ResponseDto _responseDto;
 
-        public CommentController(IMapper mapper, CommentService commentService)
+        public CommentController(IMapper mapper, ICommentService commentService)
         {
             _mapper = mapper;
             _commentService = commentService;
@@ -51,7 +51,7 @@ namespace JituPost.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public async Task<ActionResult<ResponseDto>> AddComment(CommentRequestDto commentRequestDto)
         {
             try
@@ -104,7 +104,7 @@ namespace JituPost.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public async Task<ActionResult<ResponseDto>> UpdateComment(Guid id, CommentRequestDto commentRequestDto)
         {
             try
@@ -133,7 +133,7 @@ namespace JituPost.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public async Task<ActionResult<ResponseDto>> DeleteComment(Guid id)
         {
             try
@@ -156,6 +156,31 @@ namespace JituPost.Controllers
                 _responseDto.Message = ex.Message;
                 return BadRequest(_responseDto);
             }
+
+            return Ok(_responseDto);
+        }
+
+        [HttpGet("Post/{id}")]
+        public async Task<ActionResult<ResponseDto>> GetCommentByPost(Guid id)
+        {
+            // try
+            // {
+                var comment = await _commentService.GetCommentByPostAsync(id);
+                if (comment == null)
+                {
+                    _responseDto.IsSuccess = false;
+                    _responseDto.Message = "Post Comments not found";
+                    return NotFound(_responseDto);
+                }
+
+                _responseDto.Result = comment;
+            // }
+            // catch (Exception ex)
+            // {
+            //     _responseDto.IsSuccess = false;
+            //     _responseDto.Message = ex.Message;
+            //     return BadRequest(_responseDto);
+            // }
 
             return Ok(_responseDto);
         }

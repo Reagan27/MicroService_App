@@ -81,11 +81,7 @@ namespace Auth.Services{
 
                 if(result.Succeeded)
                 {   
-                    //if success return empty string
-                  
-
-                    //var get User 
-                    //var existingUser = await _context.ApplicationUsers.FirstOrDefaultAsync(u => u.UserName.ToLower() == registerRequestDto.Email.ToLower());
+                
                     return "";
                 }
                 else

@@ -8,5 +8,6 @@ namespace JituComments.Services.IService{
     Task<string> CreateCommentAsync(Comments comment);
     Task<string> UpdateCommentAsync(Comments comment);
     Task<string> DeleteCommentAsync(Comments comment);
+    Task <IEnumerable<Comments>> GetCommentByPostAsync (Guid id);
 }
 }

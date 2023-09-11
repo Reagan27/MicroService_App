@@ -15,17 +15,17 @@ namespace JituPost.Services
         {
             _httpClientFactory = httpClientFactory;
         }
-        public async Task<IEnumerable<CommentsDto>> GetCommentsAsync()
+        public async Task<IEnumerable<CommentsDto>> GetCommentsAsync(Guid id)
         {
             //create a client
             var client = _httpClientFactory.CreateClient("Comments");
             //make a request
-            var response = await client.GetAsync("api/Comments");
+            var response = await client.GetAsync($"/api/Comment/Post/{id}");
             //read the response
             var content = await response.Content.ReadAsStringAsync();
             //deserialize the response
             var comments = JsonConvert.DeserializeObject<ResponseDto>(content);
-            // check if the response is success
+            // check if the response is success/
             if(comments.IsSuccess)
             {
                 //deserialize the data

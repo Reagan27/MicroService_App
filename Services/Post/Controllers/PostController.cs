@@ -16,7 +16,7 @@ namespace JituPost.Controllers
         private readonly IPostServices _postService;
         private readonly ResponseDto _responseDto;
 
-        public PostController(IMapper mapper, PostService postService)
+        public PostController(IMapper mapper, IPostServices postService)
         {
             _mapper = mapper;
             _postService = postService;
@@ -49,7 +49,7 @@ namespace JituPost.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public async Task<ActionResult<ResponseDto>> AddPost(PostRequestDto postRequestDto)
         {
             try
@@ -79,8 +79,8 @@ namespace JituPost.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ResponseDto>> GetPost(Guid id)
         {
-            try
-            {
+            // try
+            // {
                 var post = await _postService.GetPostByIdAsync(id);
                 if (post == null)
                 {
@@ -90,19 +90,19 @@ namespace JituPost.Controllers
                 }
 
                 _responseDto.Result = post;
-            }
-            catch (Exception ex)
-            {
-                _responseDto.IsSuccess = false;
-                _responseDto.Message = ex.Message;
-                return BadRequest(_responseDto);
-            }
+            // }
+            // catch (Exception ex)
+            // {
+            //     _responseDto.IsSuccess = false;
+            //     _responseDto.Message = ex.Message;
+            //     return BadRequest(_responseDto);
+            // }
 
             return Ok(_responseDto);
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public async Task<ActionResult<ResponseDto>> UpdatePost(Guid id, PostRequestDto postRequestDto)
         {
             try
@@ -131,7 +131,7 @@ namespace JituPost.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public async Task<ActionResult<ResponseDto>> DeletePost(Guid id)
         {
             try

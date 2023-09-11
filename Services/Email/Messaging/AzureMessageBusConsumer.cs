@@ -66,13 +66,13 @@ namespace EmailService.Messaging
             try
             {
                 StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.Append("<img src=\"https://cdn.pixabay.com/photo/2016/02/22/20/22/bmw-1216469_640.jpg\" width=\"1000\" height=\"600\">");
+                // stringBuilder.Append("<img src=\"https://cdn.pixabay.com/photo/2016/02/22/20/22/bmw-1216469_640.jpg\" width=\"1000\" height=\"600\">");
                 stringBuilder.Append("<h1> Hello " + userMessage.Name + "</h1>");
-                stringBuilder.AppendLine("<br/>Welcome to Post ");
+                stringBuilder.AppendLine("<br/>Welcome to this Social App ");
 
                 stringBuilder.Append("<br/>");
                 stringBuilder.Append('\n');
-                stringBuilder.Append("<p> Make Posts here</p>");
+                stringBuilder.Append("<p> You have registered successfully</p>");
                 var emailLoggers = new EmailLoggers(){
                     Email = userMessage.Email,
                     message = stringBuilder.ToString()

@@ -13,7 +13,9 @@ public class ThePost
     public DateTime CreatedAt { get; set; } = DateTime.Now;
 
     [NotMapped]
-    public IEnumerable<CommentsDto>? Comments{get; set;}
+    public IEnumerable<CommentsDto> Comments { get; set; } = new List<CommentsDto>();
+
+
   
 }
 }
