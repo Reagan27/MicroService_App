@@ -29,7 +29,8 @@ namespace JituPost.Services
             if(comments.IsSuccess)
             {
                 //deserialize the data
-                return JsonConvert.DeserializeObject<IEnumerable<CommentsDto>>(Convert.ToString(comments.Data));
+                var commenst = JsonConvert.DeserializeObject<List<CommentsDto>>(Convert.ToString(comments.Result));
+                return commenst;
             }
             return new List<CommentsDto>();
 

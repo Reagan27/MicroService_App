@@ -2,7 +2,7 @@
 {
     public class CommentsDto
     {
-        public Guid CommentId { get; set; }
-        public string Comment { get; set; } = string.Empty;
+        public Guid id { get; set; }
+        public string content { get; set; } = string.Empty;
     }
 }
