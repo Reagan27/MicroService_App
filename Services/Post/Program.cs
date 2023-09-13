@@ -4,6 +4,7 @@ using JituPost.Services;
 using JituPost.Service.IService;
 using Microsoft.EntityFrameworkCore;
 using JituPost.Services.IService;
+using Cart.Utility;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,11 +24,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddHttpClient("Comments", c => c.BaseAddress = new Uri(builder.Configuration["ServiceUrl:CommentsApi"]));
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddHttpClient("Comments", c => c.BaseAddress = new Uri(builder.Configuration["ServiceUrl:CommentsApi"])).AddHttpMessageHandler<BackendApiAuthenticationHttpClientHandler>();
 
 //Services
 builder.Services.AddScoped<IPostServices, PostService>();
 builder.Services.AddScoped<ICommentInterface, CommentsService>();
+builder.Services.AddScoped<BackendApiAuthenticationHttpClientHandler>();
 
 //custom builders
 
