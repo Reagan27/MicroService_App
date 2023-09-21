@@ -20,6 +20,16 @@ builder.Services.AddSwaggerGen();
 // Adding Db Connection
 builder.Services.AddDbContext<ApplicationDbContext>(options => {options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));});
 
+
+// setting cors policy
+builder.Services.AddCors(options => options.AddPolicy("policy1", build =>{
+    // build.WithOrigins("http://localhost:5120");
+    build.AllowAnyOrigin();
+    build.AllowAnyHeader();
+    build.AllowAnyMethod();
+}
+));
+
 // Register identityFramework
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -49,7 +59,7 @@ app.UseMigration();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseCors("policy1");
 app.MapControllers();
 
 app.Run();
