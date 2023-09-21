@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/MicroService_Frontend.props" />
+</Project>

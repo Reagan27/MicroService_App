@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/obj/Debug/net7.0/build-gz/MTZwSchJ.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/obj/Debug/net7.0/scopedcss/bundle/MicroService_Frontend.styles.css",
+      "PackagePath": "staticwebassets/MicroService_Frontend.styles.css"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/open-iconic/README.md"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/wwwroot/sample-data/weather.json",
+      "PackagePath": "staticwebassets/sample-data/weather.json"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.MicroService_Frontend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.MicroService_Frontend.props",
+      "PackagePath": "build\\MicroService_Frontend.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.MicroService_Frontend.props",
+      "PackagePath": "buildMultiTargeting\\MicroService_Frontend.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.MicroService_Frontend.props",
+      "PackagePath": "buildTransitive\\MicroService_Frontend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

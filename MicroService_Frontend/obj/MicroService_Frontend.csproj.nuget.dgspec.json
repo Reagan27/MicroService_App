@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\PostService\\MicroService_Frontend\\MicroService_Frontend.csproj": {}
+    "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\PostService\\MicroService_Frontend\\MicroService_Frontend.csproj": {
+    "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\PostService\\MicroService_Frontend\\MicroService_Frontend.csproj",
+        "projectUniqueName": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj",
         "projectName": "MicroService_Frontend",
-        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\PostService\\MicroService_Frontend\\MicroService_Frontend.csproj",
-        "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\PostService\\MicroService_Frontend\\obj\\",
+        "projectPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj",
+        "packagesPath": "/home/petrolhead/.nuget/packages/",
+        "outputPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo Ideapad S340\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/petrolhead/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,14 +38,26 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.WebAssembly": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -69,7 +74,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.10, 7.0.10]"
             }
           ],
           "frameworkReferences": {
@@ -77,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

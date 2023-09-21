@@ -1,39 +1,44 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">MicroService_Frontend</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿@inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authProvider
+@inject ILocalStorageService localStorage
+<div class="header">
+    <h1><i> Groopl Social</i></h1>
+    <div class="flex-row p-2">
+        <AuthorizeView>
+                <Authorized>
+                    @* <a href="coupons" class="btn bg-black text-white">Coupon</a>
+                    <a href="cart" class="btn bg-black text-white">Cart</a> *@
+                </Authorized>
+        </AuthorizeView>
+    </div>
+
+    <div class="flex-row p-2">
+        <AuthorizeView>
+                <Authorized>
+                    <button class="btn btn-danger" @onclick="logout">Logout</button>
+                </Authorized>
+
+                    <NotAuthorized>
+                        <button class="btn btn-primary" @onclick="login">Login</button>
+                        <button class="btn btn-primary" @onclick="register">Register</button>
+                    </NotAuthorized>
+        </AuthorizeView>
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
 @code {
-    private bool collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private void register(){
+        navigationManager.NavigateTo("register");
+    }
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
+    private void login(){
+        navigationManager.NavigateTo("login");
+    }
+    
+    private async Task logout(){
+        await localStorage.RemoveItemAsync("authToken");
+        await authProvider.GetAuthenticationStateAsync();
+        navigationManager.NavigateTo("");
     }
 }

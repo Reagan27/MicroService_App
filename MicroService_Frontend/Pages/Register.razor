@@ -1,0 +1,62 @@
+@page "/register"
+@inject IAuthInterface authInterface;
+@inject IJSRuntime jsRuntime
+
+<div class="row m-2">
+    <div class="col-6">
+        <img class="h-100 w-100" src="https://cdn.pixabay.com/photo/2023/08/27/00/08/cycling-8215968_640.jpg" />
+    </div>
+
+    <div class="col-6">
+        <h1> Register User</h1>
+        <EditForm Model="@newUser" OnValidSubmit="registerUser">
+            <DataAnnotationsValidator/>
+            <div class="form-group p-2">
+                <label for="name">Name</label>
+                <InputText type="text" class="form-control p-2" id="name" @bind-Value="@newUser.Name" aria-describedby="name"/>
+                <ValidationMessage For="@(()=>newUser.Name)"/>
+            </div>
+
+            <div class="form-group p-2">
+                <label for="name">Email</label>
+                <InputText type="email" class="form-control p-2" id="email" @bind-Value="@newUser.Email" aria-describedby="name" />
+                <ValidationMessage For="@(()=>newUser.Email)" />
+            </div>
+
+            <div class="form-group p-2">
+                <label for="Phone">PhoneNumber</label>
+                <InputText type="text" class="form-control p-2" id="Phone" @bind-Value="@newUser.PhoneNumber" aria-describedby="name" />
+                <ValidationMessage For="@(()=>newUser.PhoneNumber)" />
+            </div>
+
+            <div class="form-group p-2">
+                <label for="password">PassWord</label>
+                <InputText type="text" class="form-control p-2" id="password" @bind-Value="@newUser.Password" aria-describedby="name" />
+                <ValidationMessage For="@(()=>newUser.Password)" />
+            </div>
+
+            <div class="flex-row m-2" p-2>
+                <button type="submit" style="width:100px" class=" p-2 m-1 btn btn-primary">Submit</button>
+                <button type="button" style="width:100px"  class="p-2 btn btn-secondary">Reset</button>
+            </div>
+            <div class="row">
+                <p class="col-4">Already a member? <a class="col-1" href="login">Login</a></p>
+                
+            </div>
+        </EditForm>
+
+    </div>
+</div>
+
+@code {
+    private RegisterRequestDto newUser = new RegisterRequestDto();
+
+    private async Task registerUser()
+    {
+        var res = await authInterface.Register(newUser);
+        @* await jsRuntime.InvokeVoidAsync("ShowAlert", "success", res.Result); *@
+        Console.WriteLine(res.Result);
+        
+    }
+
+}
