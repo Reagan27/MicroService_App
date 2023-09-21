@@ -1,0 +1,167 @@
+﻿@page "/"
+@using Frontend.Services;
+@using MicroService_Frontend.Pages
+@using MicroService_Frontend.Models
+@using Frontend.Models.Comments
+@using MicroService_Frontend.Services.Interfaces
+@using MicroService_Frontend.Models.Posts
+@inject IPostInterface postInterface
+@inject IAuthInterface authInterface
+
+<div class="row">
+    <div class="col-2">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">My Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/CreatePost">New Post</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My Posts</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-6" style="height:90vh; overflow-y:scroll;">
+        @if (isLoading)
+        {
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span class="visually-hidden" role="status">Loading...</span>
+            </button>
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+            </button>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var post in Posts)
+                {
+                    <div class="card m-2 p-2 shadow-lg" style="width: 16rem; height:400px;">
+                        <img src="@post.Body" class="card-img-top" alt="..." style="height:40%;" />
+                        <div class="card-body">
+                            <h5 class="card-title">@post.Title</h5>
+                            <p class="card-text">@post.CreatedAt</p>
+                            @foreach (var user in Users)
+                            {
+                                if (user.Id == post.UserId)
+                                {
+                                    <p class="card-text" style="color:blueviolet">@user.Name.ToLower()</p>
+                                }
+                            }
+                            <button href="" class="btn btn-primary" @onclick="(() => SelectPost(post))">View Post</button>
+                            <button class="btn btn-primary" @onclick="(() => CommentAction(post.PostId))">Comment</button>
+                        </div>
+                        @*<EditForm Model="@(GetCommentForPost(post.postId))">
+                            <div class="form-group p-2">
+                                <InputText type="text" class="form-control p-2" id="code" placeholder="Write a comment..." @bind-Value="@(GetCommentForPost(post.postId).CommentText)" aria-describedby="name" />
+                                <ValidationMessage For="@( () => GetCommentForPost(post.postId).CommentText )" />
+                            </div>
+                        </EditForm>*@
+                    </div>
+                }
+            </div>
+        }
+    </div>
+    @*<div class="col-4">
+        <h6>Post Details</h6>
+        @if (SelectedPost != null)
+        {
+            <div class="card mb-3" style="height:90vh;">
+                <img src="@SelectedPost.Body" class="card-img-top" alt="..." style="height:50%;" />
+                <div class="card-body">
+                    <h5 class="card-title">@SelectedPost.Title</h5>
+                    <p class="card-text"><small class="text-body-secondary">Last updated  @SelectedPost.CreatedAt</small></p>
+                </div>
+                <div style="height:40%; overflow-y:scroll;" class="p-3">
+                    @if (SelectedPost.Comments != null && SelectedPost.Comments.Any())
+                    {
+                        <h5> Comments</h5>
+                        @foreach (var comment in SelectedPost.Comments)
+                        {
+                            <div class="card text-primary bg-light mb-3" style="max-width: 18rem;">
+                                @foreach (var user in Users)
+                                {
+                                    if (user.Id == comment.UserId)
+                                    {
+                                        <div class="card-header">@user.Name</div>
+                                    }
+                                }
+                                <div class="card-body">
+                                    <p class="card-text">@comment.CommentText</p>
+                                    <p class="card-text">@comment.CreatedOn</p>
+                                </div>
+                            </div>*@
+                    @*    }
+                    }
+                    else
+                    {
+                        <p>No comments yet!!</p>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            <p>Select a post to view details</p>
+        }
+    </div>
+</div>*@
+</div>
+
+    @code {
+        private List<PostDto> Posts = new List<PostDto>();
+        private bool isLoading = true;
+        private PostDto? SelectedPost;
+        private List<UserDto> Users = new List<UserDto>();
+        private List<Comment> SelectedPostComments = new List<Comment>();
+        private Dictionary<Guid, Comment> postComments = new Dictionary<Guid, Comment>();
+        private UserDto? CommentUser;
+
+        protected override async Task OnInitializedAsync()
+        {
+            Posts = await IPostInterface.GetAllPostsAsync();
+            Users = await authInterface.GetUserAll();
+        isLoading = false;
+    }
+
+    // Select a post to view details
+    private async Task SelectPost(PostDto post)
+    {
+        SelectedPost = post;
+        var AllComments = await ICommentInterface.GetAllComments();
+        SelectedPostComments = AllComments.Where(c => c.PostId == post.PostId).ToList();
+        SelectedPost.Comments = SelectedPostComments;
+    }
+
+    // Bind a comment to a specific post using the post id
+    private Comment GetCommentForPost(Guid postId)
+    {
+        if (!postComments.ContainsKey(postId))
+        {
+            // Initialize a new Comment object if it doesn't exist
+            postComments[postId] = new Comment();
+        }
+
+        return postComments[postId];
+    }
+
+    // Add comment
+    private async Task CommentAction(Guid id)
+    {
+        var comment = GetCommentForPost(id);
+        CommentRequestDto commentRequest = new CommentRequestDto
+            {
+                CommentText = comment.CommentText,
+                PostId = id
+            };
+        var res = await ICommentInterface.CreateComment(commentRequest);
+        if (res.Success)
+        {
+            comment.CommentText = "";
+        }
+        commentRequest = new CommentRequestDto();
+    }
+}

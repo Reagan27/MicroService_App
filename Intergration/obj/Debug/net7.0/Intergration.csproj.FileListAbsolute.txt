@@ -34,3 +34,15 @@ C:/Users/Lenovo Ideapad S340/Source/Repos/PostService/Intergration/obj/Debug/net
 /home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/obj/Debug/net7.0/refint/Intergration.dll
 /home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/obj/Debug/net7.0/Intergration.pdb
 /home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/obj/Debug/net7.0/ref/Intergration.dll
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\bin\Debug\net7.0\Intergration.deps.json
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\bin\Debug\net7.0\Intergration.dll
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\bin\Debug\net7.0\Intergration.pdb
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\Intergration.csproj.AssemblyReference.cache
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\Intergration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\Intergration.AssemblyInfoInputs.cache
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\Intergration.AssemblyInfo.cs
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\Intergration.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\Intergration.dll
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\refint\Intergration.dll
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\Intergration.pdb
+C:\Users\Lenovo Ideapad S340\Source\Repos\MicroService_App\Intergration\obj\Debug\net7.0\ref\Intergration.dll

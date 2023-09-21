@@ -1,0 +1,49 @@
+﻿@page "/CreatePost"
+@attribute [Authorize]
+@using MicroService_Frontend.Models.Posts;
+@using Microsoft.AspNetCore.Authorization;
+@inject IPostInterface postInterface
+@inject NavigationManager navigationManager
+<div class="row">
+   <EditForm Model="@Post" OnValidSubmit="PostAction">
+            <DataAnnotationsValidator />
+
+            <div class="form-group p-2">
+                <label for="code">Caption</label>
+                <InputText type="text" class="form-control p-2" id="code" @bind-Value="@Post.Title" aria-describedby="name" />
+                <ValidationMessage For="@(()=>Post.Title)" />
+            </div>
+
+            <div class="form-group p-2">
+                <label for="amount">Photo</label>
+                <InputText  class="form-control p-2" id="amount" @bind-Value="@Post.Body" aria-describedby="name" />
+                <ValidationMessage For="@(()=>Post.Body)" />
+            </div>
+            <div class="flex-row m-2 p-2">
+                <button type="submit" style="width:100px" class=" p-2 m-1 btn btn-primary">Submit</button>
+                <button type="button" style="width:100px" class="p-2 btn btn-secondary">Reset</button>
+            </div>
+          
+   </EditForm>
+
+</div>
+
+@code {
+    private PostDto Post = new PostDto();
+
+    private async Task PostAction()
+    {
+        PostRequestDto postRequest = new PostRequestDto
+        {
+            Title=Post.Title,            
+            Body=Post.Body
+
+        };
+        var res = await postInterface.AddPostAsync(postRequest);
+        if (res.Success)
+        {
+            navigationManager.NavigateTo("");
+        }
+       
+    }
+}

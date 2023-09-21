@@ -1,0 +1,18 @@
+﻿@using MicroService_Frontend.Models.Posts
+
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="Post Image">
+        <div class="card-body">
+            <h5 class="card-title">@Post.Title</h5>
+            <p class="card-text">@Post.Body</p>
+            <p class="card-text">@Post.CreatedAt</p>
+            <a href="#" class="btn btn-primary">View Post</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public PostDto Post { get; set; }
+}

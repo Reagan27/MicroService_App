@@ -9,37 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = MicroService_Frontend
 build_property.RootNamespace = MicroService_Frontend
-build_property.ProjectDir = /home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/
+build_property.ProjectDir = C:\Users\Lenovo Ideapad S340\source\repos\MicroService_App\MicroService_Frontend\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo Ideapad S340\source\repos\MicroService_App\MicroService_Frontend
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/petrolhead/Documents/Jitu-Codes./C\#dotnet/Social_Service/MicroService_Frontend/App.razor]
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/petrolhead/Documents/Jitu-Codes./C\#dotnet/Social_Service/MicroService_Frontend/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Pages/AddPost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/petrolhead/Documents/Jitu-Codes./C\#dotnet/Social_Service/MicroService_Frontend/Pages/Register.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIucmF6b3I=
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/petrolhead/Documents/Jitu-Codes./C\#dotnet/Social_Service/MicroService_Frontend/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/petrolhead/Documents/Jitu-Codes./C\#dotnet/Social_Service/MicroService_Frontend/_Imports.razor]
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Pages/PostForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdEZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/petrolhead/Documents/Jitu-Codes./C\#dotnet/Social_Service/MicroService_Frontend/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-nbo8vnb3za
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tuzinxz32e
 
-[/home/petrolhead/Documents/Jitu-Codes./C\#dotnet/Social_Service/MicroService_Frontend/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-le0tfndrlg
+[C:/Users/Lenovo Ideapad S340/source/repos/MicroService_App/MicroService_Frontend/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9yapxwa0sp

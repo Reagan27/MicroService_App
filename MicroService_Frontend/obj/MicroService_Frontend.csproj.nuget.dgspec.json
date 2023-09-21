@@ -1,31 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj": {}
+    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\MicroService_Frontend\\MicroService_Frontend.csproj": {}
   },
   "projects": {
-    "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj": {
+    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\MicroService_Frontend\\MicroService_Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\MicroService_Frontend\\MicroService_Frontend.csproj",
         "projectName": "MicroService_Frontend",
-        "projectPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/MicroService_Frontend.csproj",
-        "packagesPath": "/home/petrolhead/.nuget/packages/",
-        "outputPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/MicroService_Frontend/obj/",
+        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\MicroService_Frontend\\MicroService_Frontend.csproj",
+        "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\MicroService_Frontend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/petrolhead/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Lenovo Ideapad S340\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Comment\\Comment.csproj": {
+                "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Comment\\Comment.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -74,7 +85,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.10, 7.0.10]"
+              "version": "[7.0.11, 7.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -82,12 +93,124 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
         "browser-wasm": {
           "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Comment\\Comment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Comment\\Comment.csproj",
+        "projectName": "Comment",
+        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Comment\\Comment.csproj",
+        "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Comment\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo Ideapad S340\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     }

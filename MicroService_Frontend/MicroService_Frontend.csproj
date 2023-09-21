@@ -15,8 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Pages\" />
+    <ProjectReference Include="..\Services\Comment\Comment.csproj" />
   </ItemGroup>
 
 </Project>

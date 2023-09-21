@@ -1,5 +1,6 @@
 using Frontend.Models;
 using MicroService_Frontend.Models.Auth;
+using MicroService_Frontend.Models.Posts;
 using Newtonsoft.Json;
 using System.Text;
 

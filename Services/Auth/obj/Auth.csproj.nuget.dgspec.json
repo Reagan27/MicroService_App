@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Services/Auth/Auth.csproj": {}
+    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj": {}
   },
   "projects": {
-    "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/Intergration.csproj": {
+    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/Intergration.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj",
         "projectName": "Intergration",
-        "projectPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/Intergration.csproj",
-        "packagesPath": "/home/petrolhead/.nuget/packages/",
-        "outputPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/obj/",
+        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj",
+        "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/petrolhead/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Lenovo Ideapad S340\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,34 +70,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Services/Auth/Auth.csproj": {
+    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Services/Auth/Auth.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj",
         "projectName": "Auth",
-        "projectPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Services/Auth/Auth.csproj",
-        "packagesPath": "/home/petrolhead/.nuget/packages/",
-        "outputPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Services/Auth/obj/",
+        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj",
+        "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Services\\Auth\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/petrolhead/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Lenovo Ideapad S340\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/Intergration.csproj": {
-                "projectPath": "/home/petrolhead/Documents/Jitu-Codes./C#dotnet/Social_Service/Intergration/Intergration.csproj"
+              "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj": {
+                "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj"
               }
             }
           }
@@ -175,7 +190,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     }
