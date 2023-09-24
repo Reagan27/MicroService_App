@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj": {}
+    "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Services\\Auth\\Auth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj": {
+    "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj",
         "projectName": "Intergration",
-        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj",
+        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj",
         "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\obj\\",
         "projectStyle": "PackageReference",
@@ -49,6 +49,18 @@
               "target": "Package",
               "version": "[7.16.1, )"
             },
+            "Microsoft.AspNetCore.Hosting.Server.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -74,12 +86,12 @@
         }
       }
     },
-    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj": {
+    "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Services\\Auth\\Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Services\\Auth\\Auth.csproj",
         "projectName": "Auth",
-        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Services\\Auth\\Auth.csproj",
+        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Services\\Auth\\Auth.csproj",
         "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Services\\Auth\\obj\\",
         "projectStyle": "PackageReference",
@@ -104,8 +116,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj": {
-                "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj"
+              "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj": {
+                "projectPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj"
               }
             }
           }
@@ -134,29 +146,33 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Server.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.Extensions.Options": {
               "target": "Package",
@@ -164,11 +180,15 @@
             },
             "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
-              "version": "[6.32.3, )"
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [

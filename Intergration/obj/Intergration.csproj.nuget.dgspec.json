@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj": {}
+    "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj": {
+    "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj",
         "projectName": "Intergration",
-        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\MicroService_App\\Intergration\\Intergration.csproj",
+        "projectPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\Intergration.csproj",
         "packagesPath": "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lenovo Ideapad S340\\Source\\Repos\\MicroService_App\\Intergration\\obj\\",
         "projectStyle": "PackageReference",
@@ -48,6 +48,22 @@
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
               "version": "[7.16.1, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Server.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
